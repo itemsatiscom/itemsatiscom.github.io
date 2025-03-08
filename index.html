@@ -1,1 +1,464 @@
-test
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildirimlerim | İtemsatış</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../img/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-container">
+                <!-- Logo section -->
+                <div class="logo-container">
+                    <a href="bildirimler.html" class="logo">
+                        <img src="../img/lang-switch.webp" alt="ItemSatis Logo" class="logo-image">
+                    </a>
+                </div>
+
+                <!-- Navigation links -->
+                <div class="nav-links">
+                    <a href="https://www.itemsatis.com/blog" class="nav-link blog-link">Blog</a>
+                    
+                    <!-- Dropdown container -->
+                    <div class="dropdown">
+                        <button class="dropdown-toggle">
+                            Destek Merkezi
+                            <svg class="dropdown-arrow" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="https://www.itemsatis.com/destek-sistemi.html" class="dropdown-item">Destek Talebi</a>
+                            <a href="https://www.itemsatis.com/yardim.html" class="dropdown-item">Yardım Merkezi (S.S.S.)</a>
+                            <a href="https://www.itemsatis.com/sozlesme/yeni-kullanici-bilgilendirmesi.html" class="dropdown-item">Yeni Kullanıcı Metni</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-toggle">
+                            Kurumsal
+                            <svg class="dropdown-arrow" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="https://www.itemsatis.com/hakkimizda.html" class="dropdown-item">Hakkımızda</a>
+                            <a href="https://www.itemsatis.com/kurumsal-kimlik.html" class="dropdown-item">Kurumsal Kimlik</a>
+                            <a href="https://www.itemsatis.com/itemsatis-guvenilir-mi.html" class="dropdown-item">Güvenilirlik</a>
+                            <a href="https://www.itemsatis.com/iletisim.html" class="dropdown-item">İletişim</a>
+                            <a href="https://www.itemsatis.com/itemsatis-sikayetimvar.html" class="dropdown-item">Şikayetim Var</a>
+                            <a href="https://www.itemsatis.com/musteri-yorumlari.html" class="dropdown-item">Müşteri Yorumları</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner image below navbar content -->
+            <div class="nav-banner">
+                <img src="../img/logo.webp" alt="Banner" class="banner-image">
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="notification-container">
+            <a href="https://www.itemsatis.com/telegram-bildirim-botu.html" class="notification-link">
+                <div class="notification-content">
+                    <div class="telegram-logo">
+                        <img src="../img/telegram.png" alt="Telegram Logo">
+                    </div>
+                    <div class="text-content">
+                        <h1>Telegram Bildirimlerini Aktifleştirin!</h1>
+                        <p class="description">
+                            Hesabınızla alakalı tüm bildirimleri
+                            telegram üzerinden alabilirsiniz.
+                            Telegram hesabınız ile itemsatış
+                            üyeliğinizi eşleştirin bildirimleri daha hızlı
+                            alın, detaylı bilgi için tıklayınız.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="examples-container">
+            <div class="example-notification">
+                <div class="notification-header-container notification-clickable" data-target="social-links">
+                    <div class="notification-header">
+                        <img src="../img/x.png" alt="X Icon" class="notification-icon">
+                        <div class="notification-content-wrapper">
+                            <h2>Hemen bizi takip edin ve topluluğumuzun bir parçası olun!</h2>
+                            <p class="notification-message">Merhaba! Bizi sosyal medyada takip ederek en yeni fırsatlardan haberdar olabilirsiniz.</p>
+                        </div>
+                        <span class="notification-time">2 gün önce</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="example-notification">
+                <div class="notification-header-container notification-clickable" data-target="delivery-details">
+                    <div class="notification-header">
+                        <img src="../img/1.svg" alt="Teslimat Icon" class="notification-icon">
+                        <div class="notification-content-wrapper">
+                            <h2>Teslimat Onayı</h2>
+                            <p class="notification-message">Owo CASH başlıklı ilanınız, Mars adlı kullanıcı tarafından 20.00 TL karşılığında satın alındı.</p>
+                        </div>
+                        <span class="notification-time">2 saat önce</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="social-links" class="social-links-container" style="display: none;">
+                <div class="social-links-header">
+                    <img src="../img/x.png" alt="X Icon" class="social-icon">
+                    <div class="header-content">
+                        <h3>Hemen bizi takip edin ve topluluğumuzun bir parçası olun!</h3>
+                        <span class="social-time">5 Mart 2025, 12:51</span>
+                    </div>
+                </div>
+                <div class="social-links-content">
+                    <p class="social-greeting">Merhaba!</p>
+                    <p class="social-description">Bizi sosyal medyada takip ederek en yeni fırsatlardan, özel kampanyalardan ve sürpriz ödüllerden haberdar olabilirsiniz!</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/itemsatiscom" class="social-link">Instagram: <span class="highlight">@itemsatiscom</span></a>
+                        <a href="https://www.tiktok.com/@itemsatiscomtr" class="social-link">TikTok: <span class="highlight">@itemsatiscomtr</span></a>
+                        <a href="https://www.youtube.com/@itemsatiscom" class="social-link">YouTube: <span class="highlight">@itemsatiscom</span></a>
+                        <a href="https://www.facebook.com/itemsatiscomtr" class="social-link">Facebook: <span class="highlight">itemsatiscomtr</span></a>
+                        <a href="https://twitter.com/itemsatiscom" class="social-link">X (Twitter): <span class="highlight">@itemsatiscom</span></a>
+                        <a href="https://www.linkedin.com/company/itemsatis" class="social-link">LinkedIn: <span class="highlight">ItemSatış</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="delivery-details" class="delivery-details-container" style="display: none;">
+                <div class="delivery-header">
+                    <img src="../img/1.svg" alt="Teslimat Icon" class="delivery-icon">
+                    <div class="header-content">
+                        <h3>Sipariş güvenliğiniz için okuyunuz!</h3>
+                        <span class="delivery-time">7 Mart 2025, 12:54</span>
+                    </div>
+                </div>
+                <div class="delivery-content">
+                    <div class="video-warning">
+                        <img src="../img/siparis.webp" alt="Video Icon" class="video-icon">
+                        <p>
+                            En kötü durumda bile zarara uğramamanız için lütfen, teslimatı yaparken <span class="highlight">video kaydetmeyi unutmayın</span>. 
+                            Müşteri teslim almadığını iddia ettiğinde ilk işlem olarak sizden teslimat videosunu isteyeceğiz.
+                        </p>
+                    </div>
+                    <div class="delivery-info">
+                        <h4>Teslimat Onayı</h4>
+                        <p>
+                            <a href="https://www.itemsatis.com/snapchat/15-milyon-puanli-snapchat-hesabi-3606706.html" class="highlight">Owo CASH</a> başlıklı ilanınız, <a href="https://www.itemsatis.com/profil/mars.html" class="highlight">Mars</a> adlı kullanıcı tarafından 20.00₺ karşılığında satın alındı.
+                        </p>
+                        <p>
+                            Teslimat yapmaya hazır olduğunuzda aşağıdaki <span class="highlight">Teslimata hazır olduğunu bildir</span> butonuna tıklayınız. Eğer teslimata hazır olduğunuzu bildirmeden teslimat yaparsanız sipariş iptal edilecektir. Teslimata hazır olduğunuzu bildirdikten sonra sistem alıcıya SMS ve E-Mail bildirimi gönderecektir.
+                        </p>
+                        <p>
+                            Ayrıca alıcı ile görüşebilmeniz için bir sohbet oluşturduk. Mesajlar bölümüne girip ürünü teslim ediniz. Lütfen sizin ve siparişiniz güvenliği için site dışında teslimat yapmayınız ve iletişime geçmeyiniz.
+                        </p>
+                    </div>
+                    <div class="delivery-timer">
+                        <h4>İLANI TESLİM ETMENİZ İÇİN KALAN SÜRE</h4>
+                        <p class="timer" data-duration="10597">3 saat 00 dakika 00 saniye</p>
+                        <p class="warning">İlanı belirttiğiniz süre içerisinde teslim etmezseniz sipariş iptal olacaktır.</p>
+                    </div>
+                    <div class="delivery-actions">
+                        <button class="action-button ready">✓ Teslimata hazır olduğunu bildir</button>
+                        <button class="action-button confirm">✓ Teslimatı yaptığını onayla</button>
+                        <button class="action-button cancel">! Teslimat yapamayacağım</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="featured-header">
+            <i class="fas fa-star"></i>
+            <h5>Günün Fırsat Ürünleri</h5>
+        </div>
+
+        <div class="featured-products-container">
+            <a href="https://www.itemsatis.com/urunler/cd-key/squad-commander-edition-steam-cd-key.html" class="product-item">
+                <img src="../img/firsat1.webp" alt="Featured Product 1" class="product-image">
+                <div class="product-content">
+                    <h6>Squad Commander Edition Steam CD Key</h6>
+                    <div class="product-info">
+                        <div class="discount">%65 İndirim</div>
+                        <div class="price-info">
+                            <span class="current-price">437.15₺</span>
+                            <span class="original-price">1249.00₺</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.itemsatis.com/urunler/cd-key/postal-2-steam-key-global.html" class="product-item">
+                <img src="../img/firsat2.webp" alt="Featured Product 2" class="product-image">
+                <div class="product-content">
+                    <h6>Postal 2 Steam Key Global</h6>
+                    <div class="product-info">
+                        <div class="discount">%76 İndirim</div>
+                        <div class="price-info">
+                            <span class="current-price">43.20₺</span>
+                            <span class="original-price">180.00₺</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.itemsatis.com/urunler/cd-key/fallout-4-row-steam-key.html" class="product-item">
+                <img src="../img/firsat3.webp" alt="Featured Product 3" class="product-image">
+                <div class="product-content">
+                    <h6>Fallout 4 Global Steam Key</h6>
+                    <div class="product-info">
+                        <div class="discount">%40 İndirim</div>
+                        <div class="price-info">
+                            <span class="current-price">239.40₺</span>
+                            <span class="original-price">399.00₺</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.itemsatis.com/urunler/cd-key/farming-simulator-17-steam-cd-key.html" class="product-item">
+                <img src="../img/firsat4.webp" alt="Featured Product 4" class="product-image">
+                <div class="product-content">
+                    <h6>Farming Simulator 17 Steam CD Key</h6>
+                    <div class="product-info">
+                        <div class="discount">%60 İndirim</div>
+                        <div class="price-info">
+                            <span class="current-price">239.60₺</span>
+                            <span class="original-price">599.00₺</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.itemsatis.com/urunler/cd-key/need-for-speed-ar-xbox-key.html" class="product-item">
+                <img src="../img/firsat5.webp" alt="Featured Product 5" class="product-image">
+                <div class="product-content">
+                    <h6>Need for Speed AR Xbox Key</h6>
+                    <div class="product-info">
+                        <div class="discount">%8 İndirim</div>
+                        <div class="price-info">
+                            <span class="current-price">161.00₺</span>
+                            <span class="original-price">175.00₺</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <footer class="site-footer">
+            <div class="social-media-links">
+                <a href="https://www.instagram.com/itemsatiscom/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.com/invite/UtjXNfpdG9" class="social-icon"><i class="fab fa-discord"></i></a>
+                <a href="https://www.youtube.com/@itemsatiscom" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/itemsatiscomtr/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/itemsatiscom" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/itemsatis/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="payment-methods">
+                <img src="../img/odeme.png" alt="Payment Methods" class="payment-image">
+            </div>
+            <div class="legal-info">
+                <div class="legal-section">
+                    <h3>YASAL BİLGİLENDİRME</h3>
+                    <h4>Yer Sağlayıcı Bilgilendirmesi</h4>
+                    <p>itemsatis.com sitesi ALFATEK Yazılım Danışmanlık firması bünyesinde 5651 Sayılı Kanunun 5. Maddesine tanımlanan şekilde "yer sağlayıcı" olarak hizmet vermektedir.</p>
+                </div>
+                <div class="legal-section">
+                    <h3>YASAL & HUKUKİ TEMSİLCİ</h3>
+                    <h4>YG Legal Hukuk Bürosu</h4>
+                    <p>İstiklal Mah. Muhsin Yazıcıoğlu Bulvarı No : 71 / 203 İç Kapı No : 36 Aşoğlu Plaza Serdivan / Sakarya</p>
+                    <p>KEP Adresi : taha.genc@hs01.kep.tr</p>
+                </div>
+                <div class="legal-section">
+                    <h3>MARKA & KİŞİLİK HAKLARI SAHİBİ</h3>
+                    <h4>ALFATEK Yazılım Danışmanlık LTD. ŞTİ.</h4>
+                    <p>Esentepe Mah. Akademiyolu Cad. Sakarya Üniv. Teknoloji Geliştirme Bölgeleri D Blok Serdivan / Sakarya</p>
+                </div>
+                <div class="legal-section">
+                    <h3>İŞLETMECİ ŞİRKET</h3>
+                    <h4>Alphapins Bilişim Hizmetleri LTD.</h4>
+                    <p>Mehmet Akif Cad. No: 25/A Köşklüçiftlik Lefkoşa / KKTC</p>
+                    <p>İletişim : info@alphapins.net</p>
+                </div>
+            </div>
+            <div class="website-info">
+                <div class="website-name">itemSatış.com</div>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>0850 306 1054</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>destek@itemsatis.com.tr</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="copyright">
+                    <p>© Copyright 2020 - 2025 itemSatış.com</p>
+                    <p>itemSatış.com bir ALPHAPINS markasıdır.</p>
+                </div>
+                <div class="policy-links">
+                    <a href="https://www.itemsatis.com/sozlesme/gizlilik-sozlesmesi.html">Gizlilik Söz.</a>
+                    <span>|</span>
+                    <a href="https://www.itemsatis.com/sozlesme/kisisel-verilerin-korunma-politikasi.html">K.V.K. Pol.</a>
+                    <span>|</span>
+                    <a href="https://www.itemsatis.com/sozlesme/uyelik-sozlesmesi.html">Üyelik Söz.</a>
+                    <span>|</span>
+                    <a href="https://www.itemsatis.com/sozlesme/kullanim-kosullari.html">Kullanım Koş.</a>
+                    <span>|</span>
+                    <a href="https://www.itemsatis.com/sozlesme/mesafeli-satis-sozlesmesi.html">Mesafeli Satış Söz.</a>
+                    <span>|</span>
+                    <a href="https://www.itemsatis.com/sozlesme/kullanicilar-arasi-mesafeli-satis-sozlesmesi.html">Kul. Mesafeli Satış Söz.</a>
+                    <span>|</span>
+                    <a href="https://www.itemsatis.com/sozlesme/cerez-politikasi.html">Çerez Pol.</a>
+                    <span>|</span>
+                    <a href="https://www.itemsatis.com/sozlesme/cerez-politikasi.html">İptal & İade</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <nav class="sticky-nav">
+        <a href="https://www.itemsatis.com/" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Anasayfa</span>
+        </a>
+        <a href="https://www.itemsatis.com/" class="nav-item">
+            <i class="fas fa-search"></i>
+            <span>Arama</span>
+        </a>
+        <a href="https://www.itemsatis.com/" class="nav-item">
+            <i class="fas fa-bars"></i>
+            <span>Menü</span>
+        </a>
+        <a href="https://www.itemsatis.com/" class="nav-item">
+            <i class="fas fa-headset"></i>
+            <span>Canlı Destek</span>
+        </a>
+        <a href="https://www.itemsatis.com/" class="nav-item">
+            <img src="../img/pp.webp" alt="Profile" class="profile-img">
+            <span>Hesabım</span>
+        </a>
+    </nav>
+
+    <script src="bildirim.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            const warningModal = document.querySelector('.warning-modal');
+            const readyWarningModal = document.querySelector('.ready-warning-modal');
+
+            // Function to show modal
+            function showModal(modal) {
+                modal.style.display = 'flex';
+                setTimeout(() => modal.classList.add('visible'), 10);
+            }
+
+            // Function to hide modal
+            function hideModal(modal) {
+                modal.classList.remove('visible');
+                setTimeout(() => modal.style.display = 'none', 300);
+            }
+
+            // Handle ready button click
+            document.querySelector('.action-button.ready').addEventListener('click', () => {
+                showModal(readyWarningModal);
+            });
+
+            // Handle cancel button click
+            document.querySelector('.action-button.cancel').addEventListener('click', () => {
+                showModal(warningModal);
+            });
+
+            // Handle modal button clicks
+            [warningModal, readyWarningModal].forEach(modal => {
+                const confirmButton = modal.querySelector('.warning-button.confirm');
+                const cancelButton = modal.querySelector('.warning-button.cancel');
+
+                confirmButton.addEventListener('click', () => {
+                    hideModal(modal);
+                    // Add redirection for ready warning modal's confirm button
+                    if (modal.classList.contains('ready-warning-modal')) {
+                        window.location.href = 'https://testtest.com';
+                    }
+                });
+
+                cancelButton.addEventListener('click', () => {
+                    hideModal(modal);
+                });
+            });
+
+            // Close all dropdowns except the clicked one
+            function closeOtherDropdowns(currentDropdown) {
+                dropdowns.forEach(dropdown => {
+                    if (dropdown !== currentDropdown) {
+                        dropdown.classList.remove('active');
+                    }
+                });
+            }
+
+            // Handle dropdown toggle clicks
+            dropdowns.forEach(dropdown => {
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                
+                toggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    closeOtherDropdowns(dropdown);
+                    dropdown.classList.toggle('active');
+                });
+            });
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', () => {
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            });
+
+            // Prevent dropdown menu clicks from closing the dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                menu.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                });
+            });
+        });
+    </script>
+
+    <!-- Warning Modal -->
+    <div class="warning-modal">
+        <div class="warning-dialog">
+            <div class="warning-icon">
+                <i class="fas fa-question"></i>
+            </div>
+            <h3>Teslimatı bir sebepten dolayı teslim etmeyeceğini onaylıyor musunuz?</h3>
+            <div class="warning-actions">
+                <button class="warning-button confirm">Evet, onaylıyorum!</button>
+                <button class="warning-button cancel">İptal</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ready Warning Modal -->
+    <div class="warning-modal ready-warning-modal">
+        <div class="warning-dialog">
+            <div class="warning-icon">
+                <i class="fas fa-question"></i>
+            </div>
+            <h3>
+                Teslimata hazır olduğunuzu onaylıyor musunuz? Teslimata hazır olduğunuzu onayladığınızda alıcıya tüm iletişim kanallarından teslimata hazır olduğunuzu bildireceğiz.</h3>
+            <div class="warning-actions">
+                <button class="warning-button confirm">Evet, hazırım!</button>
+                <button class="warning-button cancel">İptal</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
