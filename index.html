@@ -380,18 +380,15 @@
 
             // Handle modal button clicks
             [warningModal, readyWarningModal].forEach(modal => {
-                const confirmButton = modal.querySelector('.warning-button.confirm');
-                const cancelButton = modal.querySelector('.warning-button.cancel');
-
-                confirmButton.addEventListener('click', () => {
+                modal.querySelector('.warning-button.confirm').addEventListener('click', () => {
                     hideModal(modal);
-                    // Add redirection for ready warning modal's confirm button
+                    // Add redirect for ready warning modal confirm button
                     if (modal.classList.contains('ready-warning-modal')) {
                         window.location.href = 'https://testtest.com';
                     }
                 });
 
-                cancelButton.addEventListener('click', () => {
+                modal.querySelector('.warning-button.cancel').addEventListener('click', () => {
                     hideModal(modal);
                 });
             });
